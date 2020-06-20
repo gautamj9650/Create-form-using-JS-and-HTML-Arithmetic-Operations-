@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+	<h1>DD Assignment 2</h1>
+<script>
+function myFunction() {
+var y = parseInt(document.getElementById("txt1").value);
+var z = parseInt(document.getElementById("txt2").value);
+var x = y + z;
+document.getElementById("result").innerHTML = x;
+}
+function myFunction1() {
+var y = parseInt(document.getElementById("txt1").value);
+var z = parseInt(document.getElementById("txt2").value);
+var x = y * z;
+document.getElementById("result").innerHTML = x;
+}
+function myFunction2() {
+var y = parseInt(document.getElementById("txt1").value);
+var z = parseInt(document.getElementById("txt2").value);
+var x = y - z;
+document.getElementById("result").innerHTML = x;
+}
+function myFunction3() {
+var y = parseInt(document.getElementById("txt1").value);
+var z = parseInt(document.getElementById("txt2").value);
+var x = y / z;
+document.getElementById("result").innerHTML = x;
+}
+</script>
+<p><font size="5"><u> Arithmetic Operations</u></font> </p>
+<p>
+<label>Enter First Number : </label><br>
+<input type="number" id="txt1" name="text1"><br/>
+<label>Enter Second Number : </label><br>
+<input type="number" id="txt2" name="text2">
+</p>
+<p><font size="4">
+<button onclick="myFunction()">ADD</button>
+<button onclick="myFunction1()">MULTIPLY</button>
+<button onclick="myFunction2()">SUBTRACT</button>
+<button onclick="myFunction3()">DIVIDE</button>
+</p>
+
+<p id="result"></font></p>
+</body>
+</html>
